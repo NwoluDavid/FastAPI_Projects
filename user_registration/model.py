@@ -1,18 +1,16 @@
-from pydantic import BaseModel, EmailStr, constr, ValidationError,validator
+from pydantic import BaseModel, EmailStr,Field, validator
+from typing import ClassVar
 import re
 
 class UserRegistration(BaseModel):
-    username: constr(min_length=4, max_length=20)
-    email: EmailStr
+    username: str = Field(min_length=3, max_length=50, description="Name of user", examples=["John Mac"], title="Name")
+    email: EmailStr = Field(description="Email address of the user", example="example@example.com", title="Email")
+    password: str = Field(description="User's password", min_length=8, max_length=64, title="Password")
 
-    password: constr(
-        min_length=8,
-    )
+    password_pattern: ClassVar[str] = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).{8,64}$"
 
-    @validator('password')
+    @validator("password")
     def validate_password(cls, v):
-        if not re.match("^(?=.*[A-Z])(?=.*[!@#$%^&*()])(?=.*[0-9]).*$", v):
-            raise ValueError(
-                "Password must contain at least one uppercase letter, one special character, and one digit"
-            )
+        if not re.match(cls.password_pattern, v):
+            raise ValueError("Password must contain at least one digit, one lowercase letter, one uppercase letter, one special character, and be between 8 and 64 characters long.")
         return v
