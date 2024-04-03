@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from routes import vehicle_inventory_router
 
 app=FastAPI()
+
+
 app.include_router(vehicle_inventory_router)
 
 

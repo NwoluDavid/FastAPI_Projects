@@ -13,7 +13,7 @@ The Vehicle Inventory API project provides a FastAPI endpoint for managing vehic
 1. Clone this repository:
 
     ```bash
-    git clone <repository_url>
+    git clone <https://github.com/NwoluDavid/FastAPI_Projects/tree/staging/Vehicle_inventory>
     ```
 
 2. Navigate to the project directory:
@@ -104,6 +104,43 @@ Additional documentation or resources related to this project will be available 
 ## Contributing
 
 If you'd like to contribute to this project, feel free to open an issue or submit a pull request. Contributions are always welcome!
+
+## TEST REPORTS
+
+### Pytest 
+
+"""
+        ❯ pytest
+    ============= test session starts ==============
+    platform linux -- Python 3.12.1, pytest-8.1.1, pluggy-1.4.0
+    rootdir: /home/david/FastAPI_Projects
+    configfile: pyproject.toml
+    plugins: cov-5.0.0, anyio-4.3.0
+    collected 2 items                              
+
+    test_main.py ..                          [100%]
+
+
+"""
+
+### Pytest --cov report:
+
+"""
+    ---------- coverage: platform linux, python 3.12.1-final-0 -----------
+    Name           Stmts   Miss  Cover
+    ----------------------------------
+    main.py            5      0   100%
+    models.py         33      3    91%
+    routes.py         17      0   100%
+    test_main.py      27      0   100%
+    ----------------------------------
+    TOTAL             82      3    96%
+
+    ========= 2 passed, 1 warning in 3.46s ========
+
+"""
+### Test Summary:
+the pytest is a 100% indicating that all test cases works as intended, while the pytest coverage is 96% which is above the acceptance percentage score.
 
 ## License
 
