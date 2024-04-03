@@ -1,5 +1,9 @@
 # Payment Processing API
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+#### Author: David Nwolu
+
 The Payment Processing API project implements a FastAPI route for processing payments. It utilizes request body parameters including payment amount, card number, expiration date, and CVV. Numeric validation is applied for payment amount and card-related fields, while expiration date format is validated to ensure it's not expired. The route simulates payment processing logic, including validation and authentication. The API is tested with both valid and invalid payment data.
 
 ## Technologies Used

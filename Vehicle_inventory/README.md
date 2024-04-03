@@ -1,5 +1,9 @@
 # Vehicle Inventory API
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+#### Author: David Nwolu
+
 The Vehicle Inventory API project provides a FastAPI endpoint for managing vehicle inventory. It utilizes path parameters for vehicle ID and query parameters for filtering by make, model, and price range. Numeric validation is applied for vehicle ID and price range, while string validation is implemented for make and model parameters. The API returns details of a specific vehicle identified by ID or a list of vehicles based on the query parameters. Comprehensive testing with various combinations of parameters ensures the robustness of the API.
 
 ## Technologies Used

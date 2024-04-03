@@ -5,8 +5,10 @@ This is a FastAPI application for booking event tickets. The project is written 
 ### Project Information
 
 * **Title:** Event Booking
-* **Author:** David Nwolu
-* **License:** MIT
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+#### Author: David Nwolu
 
 ### Functionality
 

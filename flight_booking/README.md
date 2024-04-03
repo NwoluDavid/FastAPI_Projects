@@ -1,5 +1,9 @@
 # Flight Booking API
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+#### Author: David Nwolu
+
 The Flight Booking API project provides a FastAPI route for booking flights. It utilizes request body parameters for passenger information (name, age, contact details), flight details (origin, destination, date), and seat preferences. String validation is implemented for passenger names and contact details, while numeric validation is applied for passenger age and flight-related fields. Seat preferences are validated to ensure they are within valid options. The API simulates the flight booking process and returns booking confirmation upon successful booking.
 
 ## Technologies Used
