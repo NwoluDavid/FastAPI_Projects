@@ -11,7 +11,7 @@ def test_register_user():
         "password": "StrongPassword123@"
     }
     response = client.post("/register", json=valid_user_data)
-    assert response.status_code == 200
+    assert response.status_code == 201
 
     # Test invalid password
     invalid_password_data = {
