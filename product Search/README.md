@@ -1,8 +1,8 @@
 ## Product Search API with FastAPI
 
-**Author:** David Nwolu
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-**License:** MIT
+#### Author: David Nwolu
 
 This FastAPI project implements a powerful search endpoint for products. It allows users to filter products based on various criteria using query parameters, making product discovery efficient.
 

@@ -1,5 +1,9 @@
 # User Registration API
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+#### Author: David Nwolu
+
 This project aims to provide a FastAPI route for user registration, allowing users to register with a username, email, and password. It implements string validation for username and email fields and ensures the password meets certain complexity requirements. Proper error messages are returned for invalid inputs. Additionally, the registration process is simulated using FastAPI TestClient.
 
 ## Technologies Used
