@@ -6,7 +6,6 @@ class UserRegistration(BaseModel):
     username: str = Field(min_length=3, max_length=50, description="Name of user", examples=["John Mac"], title="Name")
     email: EmailStr = Field(description="Email address of the user", example="example@example.com", title="Email")
     password: str = Field(description="User's password", min_length=8, max_length=64, title="Password")
-
     password_pattern: ClassVar[str] = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-+_!@#$%^&*.,?]).{8,64}$"
     
 
